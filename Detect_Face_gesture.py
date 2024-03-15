@@ -5,7 +5,7 @@ import os
 hand_cascade = cv2.CascadeClassifier('Haarcascades/face.xml')
 
 # Load video file
-cap = cv2.VideoCapture('sample2.mp4')
+cap = cv2.VideoCapture('<YOUR VIDEO FIle>.mp4')   # Replace with your video file
 
 # Initialize video writer for saving zoomed-in hand gesture screenshots
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -63,6 +63,3 @@ out.release()
 
 # Close all OpenCV windows
 cv2.destroyAllWindows()
-
-
-# 'haarcascade_eye.xml' + 'haarcascade_eye_tree_eyeglasses.xml' + 'haarcascade_frontalcatface.xml' + 'haarcascade_frontalcatface_extended.xml' + 'haarcascade_frontalface_alt.xml' + 'haarcascade_frontalface_alt_tree.xml' + 'haarcascade_frontalface_alt2.xml' + 'haarcascade_frontalface_default.xml' + 'haarcascade_fullbody.xml' + 'haarcascade_lefteye_2splits.xml' + 'haarcascade_license_plate_rus_16stages.xml' + 'haarcascade_lowerbody.xml' + 'haarcascade_profileface.xml' + 'haarcascade_righteye_2splits.xml' + 'haarcascade_russian_plate_number.xml' + 'haarcascade_smile.xml' + 'haarcascade_upperbody.xml'
